@@ -1,0 +1,136 @@
+body {
+    background-color: #F2EAE2;
+}
+
+.for-desktop {
+    display: none;
+}
+
+.main-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-product {
+    width: 343px; 
+    height: 611px;
+    display: block;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+
+.card-info {
+    margin: 24px;
+}
+
+p, span {
+    color: #6C7289;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.perfume {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 12px 0 16px;
+}
+
+.card-price {
+    margin: 24px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.current-price {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+    margin-right: 20px;
+}
+
+.no-discount-price {
+    text-decoration-line: line-through;
+}
+
+.add-to-cart {
+    width: 295px;
+    height: 48px;
+    background: #3D8168;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.add-to-cart::before {
+    content: url("../images/icon-cart.svg");
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .for-mobile {
+        display: none;
+    }
+
+    .for-desktop {
+        display: inline;
+    }
+
+    .main-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-product {
+        display: flex;
+        width: 600px;
+        height: 450px;
+    }
+    .card-info {
+        margin: 32px;
+    }
+    img {
+        max-width: 300px;
+        height: 450px;
+        border-radius: 6px 0 0 6px;
+    }
+    h1 {
+        padding: 20px 0 24px;
+    }
+
+    .card-price {
+        margin: 29px 0 30px;
+    }
+
+    .add-to-cart {
+        max-width: 236px;
+    }
+}
