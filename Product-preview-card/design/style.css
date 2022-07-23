@@ -93,6 +93,11 @@ h1 {
     padding-right: 10px;
 }
 
+.add-to-cart:hover, .add-to-cart:active {
+    background-color: #1A4032;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .for-mobile {
         display: none;
